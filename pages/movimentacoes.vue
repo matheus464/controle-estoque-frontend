@@ -9,6 +9,7 @@
       :items="movimentacoes"
       class="elevation-1 mt-4"
       item-value="id"
+      :items-per-page="10"
     >
       <template v-slot:item.tipo="{ item }">
         <v-chip :color="item.tipo === 'entrada' ? 'green' : 'red'" dark>

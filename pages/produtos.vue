@@ -8,6 +8,7 @@
         :items="produtos"
         class="elevation-1 mt-4"
         item-value="id"
+        :items-per-page="10"
         >
         <template v-slot:item.acao="{ item }">
             <v-btn icon color="blue" @click="editarProduto(item)">
